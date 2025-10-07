@@ -3,9 +3,10 @@
 ## 🎯 Advantages
 This batch script provides a simple yet powerful way to download YouTube videos and audio directly from Windows, without needing to memorize long command-line options. Some key benefits:
 
-- **User-Friendly** – Instead of typing complex commands, you just paste the video URL and pick the format.
+- **User-Friendly** – Just paste the video URL and pick the format—no need to type complex commands.
 - **Multiple Format Support** – Works with MP3 (audio), MP4, and MKV (video) formats.
 - **No Manual Searching** – Automatically filters and lists only useful formats, making selection easier.
+- **Thumbnail Saving** – Automatically downloads the video’s JPEG thumbnail alongside the video file.
 - **Integrated Tools** – Uses `yt-dlp` with `ffmpeg` for maximum compatibility and metadata embedding.
 - **Reliable Downloads** – Falls back to an alternative download method if the first attempt fails.
 - **Automatic Organization** – Downloads are saved into a predefined `Downloads` folder with clear filenames.
@@ -13,15 +14,16 @@ This batch script provides a simple yet powerful way to download YouTube videos 
 ---
 
 ## ⚙️ Features
-This script includes several handy functions:
+This script includes several handy feature:
 
-- **Playlist Support**: Choose whether your input link is a single video or a playlist.
-- **Format Filtering**: Displays only MP3, MP4, and MKV formats for easier selection.
-- **Serial Number Selection**: Pick the desired format by entering its serial number.
-- **Metadata Embedding**: Automatically embeds subtitles, thumbnails, and metadata into files.
-- **Audio/Video Detection**: Detects whether you selected an audio-only or video format, then downloads accordingly.
-- **Error Handling**: If a download fails, the script retries with a simplified command.
-- **Update Reminder**: Suggests updating `yt-dlp` if errors persist.
+- **Playlist Support** – Choose whether your input link is a single video or a playlist.  
+- **Format Filtering** – Displays only MP3, MP4, and MKV formats for easier selection.  
+- **Serial Number Selection** – Pick the desired format by entering its serial number.  
+- **Audio/Video Detection** – Detects whether you selected an audio-only or video format, then downloads accordingly.   
+- **Thumbnail Auto-Download** 🖼️ – Saves a `.jpg` thumbnail of every downloaded video.  
+- **Metadata Embedding** – Automatically embeds subtitles, thumbnails, and metadata into files. 
+- **Error Handling** – If a download fails, the script retries with a simplified command.  
+- **Update Reminder** – Suggests updating `yt-dlp` if errors persist.  
 
 ---
 
@@ -56,15 +58,17 @@ Follow these steps to set up the script:
    - Wait for the download to complete.
 
 5. **Find Your Files**  
-   - Downloads will be saved in the `Downloads` folder inside your script directory.
+   - Videos and audio files are saved inside the `Downloads` folder.  
+   - Each downloaded video will have its corresponding `.jpg` thumbnail image.  
 
 ---
 
 ## 📜 License
 Released under the **MIT License**. See [LICENSE](LICENSE) for details.  
-   ```
-   Copyright (c) 2025 Munna MasterMind
-   ```
+```
+Copyright (c) 2025 Munna MasterMind
+```
+
 ---
 
 ## 👨‍💻 Author
@@ -88,8 +92,8 @@ consider buying me a coffee via **Binance Pay**:
 ---
 
 ## 🤝 Contribution  
-Pull requests and issues are welcome if you want to improve documentation. 
+Pull requests and issues are welcome if you want to improve documentation or suggest new features.  
 
 ---
 
-✅ Now you have a fully automated and user-friendly YouTube downloader for Windows!
+✅ Now you have a **fully automated, thumbnail-supported, and clean-naming YouTube downloader** for Windows!

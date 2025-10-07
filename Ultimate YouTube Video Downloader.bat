@@ -116,34 +116,36 @@ echo.
 echo You selected Serial %SERIAL% → Format Code %FORMAT_CODE%
 echo.
 
-:: Check if selected format is audio only
+:: Determine if it's audio only
 echo !FMT_%SERIAL%! | findstr /i "audio" >nul
 if errorlevel 1 (
-  :: Video format - download with best audio
   echo Downloading video with best audio...
-  "%YTDLP%" -f %FORMAT_CODE%+bestaudio --merge-output-format mp4 -o "%OUTDIR%\%%(title)s - %%(id)s.%%(ext)s" %EXTRA_OPTS% %PLAYLIST_FLAG% "%VIDEO_URL%"
+  "%YTDLP%" -f %FORMAT_CODE%+bestaudio --merge-output-format mp4 -o "%OUTDIR%\%%(title)s.%%(ext)s" %EXTRA_OPTS% %PLAYLIST_FLAG% "%VIDEO_URL%"
 ) else (
-  :: Audio format - download audio only
   echo Downloading audio only...
-  "%YTDLP%" -f %FORMAT_CODE% -o "%OUTDIR%\%%(title)s - %%(id)s.%%(ext)s" %EXTRA_OPTS% %PLAYLIST_FLAG% "%VIDEO_URL%"
+  "%YTDLP%" -f %FORMAT_CODE% -o "%OUTDIR%\%%(title)s.%%(ext)s" %EXTRA_OPTS% %PLAYLIST_FLAG% "%VIDEO_URL%"
 )
 
 if errorlevel 1 (
   echo.
-  echo yt-dlp reported an error.
-  echo Trying alternative download method...
-  "%YTDLP%" -f %FORMAT_CODE% -o "%OUTDIR%\%%(title)s - %%(id)s.%%(ext)s" %PLAYLIST_FLAG% "%VIDEO_URL%"
+  echo yt-dlp reported an error. Trying alternative download method...
+  "%YTDLP%" -f %FORMAT_CODE% -o "%OUTDIR%\%%(title)s.%%(ext)s" %PLAYLIST_FLAG% "%VIDEO_URL%"
 )
 
+:: Download thumbnail (JPEG)
+echo.
+echo Downloading video thumbnail...
+"%YTDLP%" --skip-download --write-thumbnail --convert-thumbnails jpg -o "%OUTDIR%\%%(title)s.%%(ext)s" %PLAYLIST_FLAG% "%VIDEO_URL%"
+
 if errorlevel 1 (
-  echo.
-  echo Download failed. Try updating yt-dlp with:
-  echo "%YTDLP%" -U
+  echo Thumbnail download failed.
 ) else (
-  echo.
-  echo Download Completed Successfully!
-  echo Files saved to "%OUTDIR%".
+  echo Thumbnail downloaded successfully!
 )
+
+echo.
+echo Download Completed Successfully!
+echo Files saved to "%OUTDIR%".
 
 :: Cleanup
 del "%TMPFILE%" 2>nul
