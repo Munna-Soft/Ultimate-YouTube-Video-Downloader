@@ -1,3 +1,5 @@
+<!-- GitAds-Verify: QK6T4S1UHMRYNYIPIA77JYLT1GG4TIAU -->
+
 # Ultimate YouTube Video Downloader (Batch Script)
 
 ## 🎯 Advantages
@@ -97,3 +99,5 @@ Pull requests and issues are welcome if you want to improve documentation or sug
 ---
 
 ✅ Now you have a **fully automated, thumbnail-supported, and clean-naming YouTube downloader** for Windows!
+
+<!-- GitAds-Verify: QK6T4S1UHMRYNYIPIA77JYLT1GG4TIAU -->
