@@ -1,4 +1,6 @@
 <!-- GitAds-Verify: QK6T4S1UHMRYNYIPIA77JYLT1GG4TIAU -->
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=munna-soft/ultimate-youtube-video-downloader@github)](https://gitads.dev/v1/ad-track?source=munna-soft/ultimate-youtube-video-downloader@github)
 
 # Ultimate YouTube Video Downloader (Batch Script)
 
@@ -101,3 +103,5 @@ Pull requests and issues are welcome if you want to improve documentation or sug
 ✅ Now you have a **fully automated, thumbnail-supported, and clean-naming YouTube downloader** for Windows!
 
 <!-- GitAds-Verify: QK6T4S1UHMRYNYIPIA77JYLT1GG4TIAU -->
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=munna-soft/ultimate-youtube-video-downloader@github)](https://gitads.dev/v1/ad-track?source=munna-soft/ultimate-youtube-video-downloader@github)
