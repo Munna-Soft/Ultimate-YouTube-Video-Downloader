@@ -57,14 +57,22 @@ Follow these steps to set up the script:
 4. **Run the Script**  
    - Double-click `Ultimate YouTube Video Downloader.bat`.  
    - Enter the video/playlist URL.  
-   - Choose whether it’s a playlist.  
-   - Pick the desired format using the serial number.  
+   - Choose whether it’s a playlist. (y/n)  
+   - Pick the desired format resulotion using the serial number.  
    - Wait for the download to complete.
 
 5. **Find Your Files**  
-   - Videos and audio files are saved inside the `Downloads` folder.  
-   - Each downloaded video will have its corresponding `.jpg` thumbnail image.  
+   - Video, Audio & Thumbnail files are saved inside the `Downloads` folder.  
+   - Each downloaded file will have its corresponding `.jpg` thumbnail image.
 
+✅ Now you have a **fully automated, thumbnail-supported, and clean-naming YouTube downloader** for Windows!  
+
+---
+
+## 👨‍💻 Author
+🛠️ Developed and maintained by [Munna MasterMind](https://facebook.com/The.Munna) & [Portfolio](https://munna-soft.github.io/Portfolio) 👈
+
+🌍 Open-source and free for all users.  
 ---
 
 ## 📜 License
@@ -73,19 +81,11 @@ Released under the **MIT License**. See [LICENSE](LICENSE) for details.
 Copyright (c) 2025 Munna MasterMind
 ```
 
----
-
-## 👨‍💻 Author
-🛠️ Developed and maintained by [Munna MasterMind](https://www.facebook.com/The.Munna)  
-🌍 Open-source and free for all users.  
-
----
-
 <div align="center">
 
 ## ☕ Support the Project  
-✨ If you find this project helpful and want to support its development,  
-consider buying me a coffee via **Binance Pay**:  
+✨ If my project help you, please ⭐ star my repos —  
+It motivates me to build **more awesome systems**! & consider buying me a coffee via **Binance Pay**:  
 
 [![Binance Pay](https://img.shields.io/badge/Binance%20Pay-788233021-fcd535?style=for-the-badge&logo=binance&logoColor=white)](https://github.com/Munna-Soft)  
 
@@ -93,14 +93,10 @@ consider buying me a coffee via **Binance Pay**:
 
 </div>
 
----
-
 ## 🤝 Contribution  
-Pull requests and issues are welcome if you want to improve documentation or suggest new features.  
+Pull requests and issues are welcome if you want to improve or suggest new features.  
 
 ---
-
-✅ Now you have a **fully automated, thumbnail-supported, and clean-naming YouTube downloader** for Windows!
 
 <!-- GitAds-Verify: QK6T4S1UHMRYNYIPIA77JYLT1GG4TIAU -->
 ## GitAds Sponsored
