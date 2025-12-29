@@ -1,5 +1,5 @@
 @echo off
-chcp 65001 >nul
+chcp 65001 >null
 setlocal EnableDelayedExpansion
 title YouTube Video Downloader v3.0- Munna MasterMind
 
