@@ -2,7 +2,7 @@
 ## GitAds Sponsored
 [![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=munna-soft/ultimate-youtube-video-downloader@github)](https://gitads.dev/v1/ad-track?source=munna-soft/ultimate-youtube-video-downloader@github)
 
-# Ultimate YouTube Video Downloader (Batch Script)
+# YouTube Video Downloader (Batch Script)
 
 ## 🎯 Advantages
 This batch script provides a simple yet powerful way to download YouTube videos and audio directly from Windows, without needing to memorize long command-line options. Some key benefits:
@@ -27,6 +27,7 @@ This script includes several handy feature:
 - **Thumbnail Auto-Download** 🖼️ – Saves a `.jpg` thumbnail of every downloaded video.  
 - **Metadata Embedding** – Automatically embeds subtitles, thumbnails, and metadata into files. 
 - **Error Handling** – If a download fails, the script retries with a simplified command.  
+- **Continuous Download** - Multiple time download system. 
 - **Update Reminder** – Suggests updating `yt-dlp` if errors persist.  
 
 ---
@@ -43,19 +44,19 @@ Follow these steps to set up the script:
    - Place the following files inside it:
      - `yt-dlp.exe`
      - `ffmpeg.exe`
-     - The batch script (e.g., `Ultimate YouTube Video Downloader.bat`).
+     - The batch script (e.g., `YouTube Video Downloader.bat`).
 
 3. **Folder Structure Example**
    ```
    YouTubeDownloader\
    ├─ yt-dlp.exe
    ├─ ffmpeg.exe
-   ├─ downloader.bat
+   ├─ YouTube Video Downloader.bat
    └─ Downloads\   (auto-created for saving files)
    ```
 
 4. **Run the Script**  
-   - Double-click `Ultimate YouTube Video Downloader.bat`.  
+   - Double-click `YouTube Video Downloader.bat`.  
    - Enter the video/playlist URL.  
    - Choose whether it’s a playlist. (y/n)  
    - Pick the desired format resulotion using the serial number.  

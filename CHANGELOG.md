@@ -1,6 +1,14 @@
 # 📜 Changelog
 
-All notable changes to **Ultimate YouTube Video Downloader (Batch Script)** will be documented in this file.
+All notable changes to **YouTube Video Downloader (Batch Script)** will be documented in this file.
+
+---
+
+## [3.0] - 2025-12-29
+### 📝 Feature Update
+- Another video download option → Added.
+- Menu Based Download System → Coming Soon
+- Web Version → Coming Soon
 
 ---
 
