@@ -2,102 +2,130 @@
 ## GitAds Sponsored
 [![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=munna-soft/ultimate-youtube-video-downloader@github)](https://gitads.dev/v1/ad-track?source=munna-soft/ultimate-youtube-video-downloader@github)
 
+<div align="center">
+
 # YouTube Video Downloader (Batch Script)
 
+</div>
+
 ## 🎯 Advantages
-This batch script provides a simple yet powerful way to download YouTube videos and audio directly from Windows, without needing to memorize long command-line options. Some key benefits:
 
-- **User-Friendly** – Just paste the video URL and pick the format—no need to type complex commands.
-- **Multiple Format Support** – Works with MP3 (audio), MP4, and MKV (video) formats.
-- **No Manual Searching** – Automatically filters and lists only useful formats, making selection easier.
-- **Thumbnail Saving** – Automatically downloads the video’s JPEG thumbnail alongside the video file.
-- **Integrated Tools** – Uses `yt-dlp` with `ffmpeg` for maximum compatibility and metadata embedding.
-- **Reliable Downloads** – Falls back to an alternative download method if the first attempt fails.
-- **Automatic Organization** – Downloads are saved into a predefined `Downloads` folder with clear filenames.
+This Windows batch script lets you download YouTube videos or audio **without manually installing tools or typing long commands**.
 
----
-
-## ⚙️ Features
-This script includes several handy feature:
-
-- **Playlist Support** – Choose whether your input link is a single video or a playlist.  
-- **Format Filtering** – Displays only MP3, MP4, and MKV formats for easier selection.  
-- **Serial Number Selection** – Pick the desired format by entering its serial number.  
-- **Audio/Video Detection** – Detects whether you selected an audio-only or video format, then downloads accordingly.   
-- **Thumbnail Auto-Download** 🖼️ – Saves a `.jpg` thumbnail of every downloaded video.  
-- **Metadata Embedding** – Automatically embeds subtitles, thumbnails, and metadata into files. 
-- **Error Handling** – If a download fails, the script retries with a simplified command.  
-- **Continuous Download** - Multiple time download system. 
-- **Update Reminder** – Suggests updating `yt-dlp` if errors persist.  
+* **Zero Manual Dependency Setup** – Automatically downloads `yt-dlp` and `ffmpeg` if missing.
+* **Beginner Friendly** – Just paste the YouTube URL and follow on-screen options.
+* **Audio & Video Support** – MP3 (audio) and MP4/MKV (video).
+* **Smart Format List** – Shows only useful formats with serial numbers.
+* **Thumbnail Saving** 🖼️ – Automatically downloads `.jpg` thumbnails.
+* **Metadata Embedding** – Embeds thumbnail & metadata into supported formats.
+* **Playlist Control** – Choose whether to download a single video or an entire playlist.
+* **Retry System** – Uses a simplified fallback command if download fails.
+* **Clean File Organization** – All files saved inside a `Downloads` folder.
 
 ---
 
-## 🛠️ Setup Process
-Follow these steps to set up the script:
+## ⚙️ Features (Script-Based)
 
-1. **Download Required Files**  
-   - [yt-dlp.exe](https://github.com/yt-dlp/yt-dlp/releases)  
-   - [ffmpeg.exe](https://ffmpeg.org/download.html)  
-
-2. **Create a Folder**  
-   - Make a folder (e.g., `YouTubeDownloader`).  
-   - Place the following files inside it:
-     - `yt-dlp.exe`
-     - `ffmpeg.exe`
-     - The batch script (e.g., `YouTube Video Downloader.bat`).
-
-3. **Folder Structure Example**
-   ```
-   YouTubeDownloader\
-   ├─ yt-dlp.exe
-   ├─ ffmpeg.exe
-   ├─ YouTube Video Downloader.bat
-   └─ Downloads\   (auto-created for saving files)
-   ```
-
-4. **Run the Script**  
-   - Double-click `YouTube Video Downloader.bat`.  
-   - Enter the video/playlist URL.  
-   - Choose whether it’s a playlist. (y/n)  
-   - Pick the desired format resulotion using the serial number.  
-   - Wait for the download to complete.
-
-5. **Find Your Files**  
-   - Video, Audio & Thumbnail files are saved inside the `Downloads` folder.  
-   - Each downloaded file will have its corresponding `.jpg` thumbnail image.
-
-✅ Now you have a **fully automated, thumbnail-supported, and clean-naming YouTube downloader** for Windows!  
+* ✅ Auto-downloads **yt-dlp.exe** from the official GitHub release
+* ✅ Auto-downloads & extracts **ffmpeg (win64 GPL build)**
+* ✅ UTF‑8 support (Bangla/Unicode safe filenames)
+* ✅ Format detection (Audio-only vs Video)
+* ✅ Playlist enable download option
+* ✅ Thumbnail + metadata embedding (`--embed-thumbnail`)
+* ✅ Error handling with retry logic
+* ✅ Continuous multiple downloads (run again without closing)
 
 ---
+
+## 🛠️ Dependency Setup (Automatic)
+
+🚀 **No manual installation required!**
+
+When you run the script for the **first time**, it automatically:
+
+1. Checks if `yt-dlp.exe` exists
+2. If missing → downloads it from the official source
+3. Checks if `ffmpeg.exe` exists
+4. If missing → downloads the latest FFmpeg ZIP and extracts it
+
+All tools are stored **locally inside the same folder** as the script.
+
+### 📁 Auto‑Generated Folder Structure
+
+```
+YouTubeDownloader\
+├─ yt-dlp.exe        (auto-downloaded)
+├─ ffmpeg.exe       (auto-extracted)
+├─ YouTube Video Downloader.bat
+└─ Downloads\       (auto-created)
+```
+
+---
+
+## ▶️ How to Download YouTube Videos
+
+### Step‑by‑Step Usage
+
+1. **Run the Script**
+   Double‑click `YouTube Video Downloader.bat`
+
+2. **Paste YouTube URL**
+
+   * Supports single video or playlist links
+
+3. **Choose Format**
+
+   * Script shows available formats with **serial numbers**
+   * Enter the serial number of your desired quality
+
+4. **Download Starts Automatically**
+
+   * Thumbnail (`.jpg`) is saved
+   * Metadata is embedded where supported
+
+5. **Completion**
+
+   * Files are saved inside the `Downloads` folder
+
+🔁 You can repeat downloads **multiple times without closing the script**.
+
+## ❗ Notes & Tips
+
+* If YouTube changes cause errors, rerun the script — it supports retry logic
+* Keep the script folder writable (don’t run from `C:\Windows`)
+* Works best on **Windows 10 / 11 (64‑bit)**
 
 ## 👨‍💻 Author
-🛠️ Developed and maintained by [Munna MasterMind](https://facebook.com/The.Munna) & [Portfolio](https://munna-soft.github.io/Portfolio) 👈
 
-🌍 Open-source and free for all users.  
----
+🛠️ Developed & maintained by **Munna MasterMind**
+🔗 [Facebook](https://facebook.com/The.Munna) | [Portfolio](https://munna-soft.github.io/Portfolio)
+
+🌍 Open‑source • Free to use • Community‑friendly
 
 ## 📜 License
-Released under the **MIT License**. See [LICENSE](LICENSE) for details.  
+
+Released under the [**MIT License**](LICENSE) for details.
+
 ```
 Copyright (c) 2025 Munna MasterMind
 ```
 
 <div align="center">
 
-## ☕ Support the Project  
-✨ If my project help you, please ⭐ star my repos —  
-It motivates me to build **more awesome systems**! & consider buying me a coffee via **Binance Pay**:  
+## ☕ Support the Project
 
-[![Binance Pay](https://img.shields.io/badge/Binance%20Pay-788233021-fcd535?style=for-the-badge&logo=binance&logoColor=white)](https://github.com/Munna-Soft)  
+If this project helps you, please ⭐ **star the repository** — it keeps me motivated 💙
+You can also support via **Binance Pay**:
 
-🚀 Every contribution keeps me motivated and helps me improve this project!  
+[![Binance Pay](https://img.shields.io/badge/Binance%20Pay-788233021-fcd535?style=for-the-badge\&logo=binance\&logoColor=white)](https://github.com/Munna-Soft)
+
+🚀 Every contribution helps improve this project!
 
 </div>
 
-## 🤝 Contribution  
-Pull requests and issues are welcome if you want to improve or suggest new features.  
+## 🤝 Contribution
 
----
+Pull requests, bug reports, and feature suggestions are always welcome.
 
 <!-- GitAds-Verify: QK6T4S1UHMRYNYIPIA77JYLT1GG4TIAU -->
 ## GitAds Sponsored

@@ -4,6 +4,14 @@ All notable changes to **YouTube Video Downloader (Batch Script)** will be docum
 
 ---
 
+## [4.0] - 2026-01-20
+### 🧩 Feature Update
+- Auto download yt-dlp & ffmpeg for dependency setup.
+- Separate download feature (Single videos/playlist videos)
+- Continuous downloading without reopen script.
+
+---
+
 ## [3.0] - 2025-12-29
 ### 📝 Feature Update
 - Another video download option → Added.
