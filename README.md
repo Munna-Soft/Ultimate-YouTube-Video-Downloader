@@ -17,23 +17,10 @@ This Windows batch script lets you download YouTube videos or audio **without ma
 * **Audio & Video Support** – MP3 (audio) and MP4/MKV (video).
 * **Smart Format List** – Shows only useful formats with serial numbers.
 * **Thumbnail Saving** 🖼️ – Automatically downloads `.jpg` thumbnails.
-* **Metadata Embedding** – Embeds thumbnail & metadata into supported formats.
-* **Playlist Control** – Choose whether to download a single video or an entire playlist.
+* **Playlist Control** – Choose whether to download an entire playlist.
+* **Bulk Video Link** - Upto 100 Link video downloads at once
 * **Retry System** – Uses a simplified fallback command if download fails.
 * **Clean File Organization** – All files saved inside a `Downloads` folder.
-
----
-
-## ⚙️ Features (Script-Based)
-
-* ✅ Auto-downloads **yt-dlp.exe** from the official GitHub release
-* ✅ Auto-downloads & extracts **ffmpeg (win64 GPL build)**
-* ✅ UTF‑8 support (Bangla/Unicode safe filenames)
-* ✅ Format detection (Audio-only vs Video)
-* ✅ Playlist enable download option
-* ✅ Thumbnail + metadata embedding (`--embed-thumbnail`)
-* ✅ Error handling with retry logic
-* ✅ Continuous multiple downloads (run again without closing)
 
 ---
 
@@ -41,7 +28,7 @@ This Windows batch script lets you download YouTube videos or audio **without ma
 
 🚀 **No manual installation required!**
 
-When you run the script for the **first time**, it automatically:
+When you run the script for the **first time**, Complete dependency setup first:
 
 1. Checks if `yt-dlp.exe` exists
 2. If missing → downloads it from the official source
@@ -54,10 +41,10 @@ All tools are stored **locally inside the same folder** as the script.
 
 ```
 YouTubeDownloader\
-├─ yt-dlp.exe        (auto-downloaded)
-├─ ffmpeg.exe       (auto-extracted)
 ├─ YouTube Video Downloader.bat
-└─ Downloads\       (auto-created)
+├─ Downloads\       (auto-created)
+├─ yt-dlp.exe       (auto-downloaded)
+└─ ffmpeg.exe       (auto download-extracted)
 ```
 
 ---
@@ -69,9 +56,9 @@ YouTubeDownloader\
 1. **Run the Script**
    Double‑click `YouTube Video Downloader.bat`
 
-2. **Paste YouTube URL**
+2. **Select Downloading Mode**
 
-   * Supports single video or playlist links
+   * Supports single video, playlist links or bulk urls
 
 3. **Choose Format**
 
@@ -81,7 +68,6 @@ YouTubeDownloader\
 4. **Download Starts Automatically**
 
    * Thumbnail (`.jpg`) is saved
-   * Metadata is embedded where supported
 
 5. **Completion**
 
@@ -94,10 +80,11 @@ YouTubeDownloader\
 * If YouTube changes cause errors, rerun the script — it supports retry logic
 * Keep the script folder writable (don’t run from `C:\Windows`)
 * Works best on **Windows 10 / 11 (64‑bit)**
+* Some of times faced an error **403 forbidden** bcz of detect your ip as anti bot
 
 ## 👨‍💻 Author
 
-🛠️ Developed & maintained by **Munna MasterMind**
+🛠️ Developed & maintenance by **Munna MasterMind**
 🔗 [Facebook](https://facebook.com/The.Munna) | [Portfolio](https://munna-soft.github.io/Portfolio)
 
 🌍 Open‑source • Free to use • Community‑friendly

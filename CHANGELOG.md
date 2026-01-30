@@ -4,6 +4,14 @@ All notable changes to **YouTube Video Downloader (Batch Script)** will be docum
 
 ---
 
+## [4.5] - 2026-01-30
+### 🧩 Feature Update+Refactor some issues
+- Bulk video urls input & download system
+- Metadata download system removed
+- Unknown format **m3u8** Removed
+
+---
+
 ## [4.0] - 2026-01-20
 ### 🧩 Feature Update
 - Auto download yt-dlp & ffmpeg for dependency setup.
