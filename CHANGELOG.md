@@ -4,6 +4,12 @@ All notable changes to **YouTube Video Downloader (Batch Script)** will be docum
 
 ---
 
+## [4.5.1] - 2026-02-18
+### 🚀 Minor update
+- Fix some windows run time error
+
+---
+
 ## [4.5] - 2026-01-30
 ### 🧩 Feature Update+Refactor some issues
 - Bulk video urls input & download system
